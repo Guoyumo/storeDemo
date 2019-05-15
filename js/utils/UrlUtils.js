@@ -1,6 +1,4 @@
-/**
- * Created by zf.wang on 2017/10/26.
- */
+
 
 define([""], function () {
     return {

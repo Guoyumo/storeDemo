@@ -1,6 +1,4 @@
-/**
- * @author klovis @ 2018.01.16
- */
+
 define([''], function () {
     return {
         // 判断字符串非空
