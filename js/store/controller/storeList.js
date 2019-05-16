@@ -1,6 +1,6 @@
 require(["zepto", "underscore", "wx",
     "utils/stringUtils",
-    "store/view/storeItemTpl"],
+    "text!store/view/storeItemTpl.html"],
     function ($, _, wx,  stringUtils,storeItemTpl) {
       var storeList = {
         el:{
