@@ -1,0 +1,13 @@
+html, body{
+  background-color: #f1f1f1;
+}
+
+.store-item{
+  display: inline-block;
+  background-color: #fff;
+  border-radius: .5rem;
+  box-shadow: 0rem 0.15rem 0.6rem 0rem rgba(210,217,223,1);
+  width: 8rem;
+  text-align: center;
+  margin: .5rem;
+}

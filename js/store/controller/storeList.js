@@ -7,9 +7,18 @@ require(["zepto", "underscore", "wx",
           $listCont : $(".listCont")
         },
         fakeData : [
-          {title:'store 1'},
-          {title:'store 2'},
-          {title:'store 3'}
+          {
+            title:'store 1',
+            image:'http://static.ainsurtech.com/userfiles/2/files/product/tProductSummary/2017/11/xinchenglogo.jpg'
+          },
+          {
+            title:'store 2',
+            image:'http://static.ainsurtech.com/userfiles/2/files/product/tProductSummary/2017/11/xinchenglogo.jpg'
+          },
+          {
+            title:'store 3',
+            image:'http://static.ainsurtech.com/userfiles/2/files/product/tProductSummary/2017/11/xinchenglogo.jpg'
+          }
         ],
         render:function(){
           var self = this;
