@@ -3,11 +3,14 @@ html, body{
 }
 
 .store-item{
-  display: inline-block;
+  /* display: block; */
   background-color: #fff;
   border-radius: .5rem;
   box-shadow: 0rem 0.15rem 0.6rem 0rem rgba(210,217,223,1);
-  width: 8rem;
+  /* width: 17.8rem; */
   text-align: center;
-  margin: .5rem;
+  margin: .5rem .5rem 0rem .5rem;
+}
+.store-item:last-child{
+  margin:.5rem;
 }
