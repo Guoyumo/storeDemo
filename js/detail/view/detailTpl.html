@@ -1,0 +1,47 @@
+<div class="detail-item">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <img class="swiper-slide" src="<%= detailList.image %>" alt="">
+      <img class="swiper-slide" src="<%= detailList.image1 %>" alt="">
+      <img class="swiper-slide" src="<%= detailList.image %>" alt="">
+      <img class="swiper-slide" src="<%= detailList.image1 %>" alt="">
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="detail-price">￥4399<span>已售<%= detailList.qty %>件</span></div>
+</div>
+<div class="detail-title"><%= detailList.name %></div>
+<div class="weui-cells weui-cells_form">
+  <% _.each(detailList.type,function(item){ %>
+  <div class="weui-flex detail-margin">
+    <div class="weui-flex__item"><%= item.typeName %></div>
+    <% _.each(item.typeItem,function(item){ %>
+    <div class="weui-flex__item choose"><%= item %></div>
+    <% }) %>
+  </div>
+  <% }) %>
+</div>
+<div class="detail-note">
+  <h1>宝贝详情</h1>
+  <p><%= detailList.note %></p>
+</div>
+<div class="footer-bar weui-flex">
+  <div class="weui-flex__item weui-btn weui-btn weui-btn_primary">
+    联系商家
+  </div>
+  <div class="weui-flex__item weui-btn weui-btn weui-btn_primary" id="detail-buy">
+    立即购买
+  </div>
+</div>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2500,
+    },
+    speed: 200,
+  });
+</script>

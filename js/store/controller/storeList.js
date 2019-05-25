@@ -34,5 +34,8 @@ require(["zepto", "underscore", "wx",
       // 执行函数
     $(function () {
       storeList.init();
+      $(".store-item").on('click',function(){
+        location.href = "detail.html"
+      })
   });
 })
