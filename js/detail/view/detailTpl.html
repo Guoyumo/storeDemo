@@ -1,3 +1,4 @@
+<!-- swiper title -->
 <div class="detail-item">
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -11,37 +12,64 @@
   <div class="detail-price">￥4399<span>已售<%= detailList.qty %>件</span></div>
 </div>
 <div class="detail-title"><%= detailList.name %></div>
-<div class="weui-cells weui-cells_form">
-  <% _.each(detailList.type,function(item){ %>
-  <div class="weui-flex detail-margin">
-    <div class="weui-flex__item"><%= item.typeName %></div>
-    <% _.each(item.typeItem,function(item){ %>
-    <div class="weui-flex__item choose"><%= item %></div>
-    <% }) %>
+<div class="detail-power indent">一天退换 · 市内免邮 · 直营店铺</div>
+<!-- select -->
+<div class="weui-cells weui-cells_form detail-type">
+  <div class="weui-cell">
+    <div class="weui-cell__hd"><label for="size" class="weui-label">选择尺码</label></div>
+    <div class="weui-cell__bd">
+      <input class="weui-input" id="size" type="text" value="">
+    </div>
   </div>
-  <% }) %>
+  <div class="weui-cell">
+    <div class="weui-cell__hd"><label for="color" class="weui-label">选择颜色</label></div>
+    <div class="weui-cell__bd">
+      <input class="weui-input" id="color" type="text" value="">
+    </div>
+  </div>
 </div>
+<!-- footer -->
 <div class="detail-note">
   <h1>宝贝详情</h1>
   <p><%= detailList.note %></p>
 </div>
 <div class="footer-bar weui-flex">
-  <div class="weui-flex__item weui-btn weui-btn weui-btn_primary">
-    联系商家
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p class="buy-amount">数量</p>
+    </div>
+    <div class="weui-cell__ft">
+      <div class="weui-count">
+        <a class="weui-count__btn weui-count__decrease"></a>
+        <input class="weui-count__number" type="number" value="1" />
+        <a class="weui-count__btn weui-count__increase"></a>
+      </div>
+    </div>
   </div>
-  <div class="weui-flex__item weui-btn weui-btn weui-btn_primary" id="detail-buy">
-    立即购买
+  <div class="booter-bar-botton cell-phone">
+    <span> 联系商家</span>
+  </div>
+  <div class="booter-bar-botton detail-buy" id="detail-buy">
+    <span> 立即购买</span>
   </div>
 </div>
 <script>
-  var swiper = new Swiper('.swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-    },
-    speed: 200,
+  //select
+  $("#size").select({
+    title: "请选择尺码",
+    items: ['l', 'X', 'XL', 'XXL', 'XXXL'],
+    // onChange: function(d) {
+    // console.log(this, d);
+    // },
+    // onClose: function() {
+    // console.log("close");
+    // },
+    // onOpen: function() {
+    // console.log("open");
+    // },
+  });
+  $("#color").select({
+    title: "请选择颜色",
+    items: ["红色", "绿色", "白色", "黑色"]
   });
 </script>

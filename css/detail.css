@@ -41,69 +41,74 @@ html, body {
 }
 
 .detail-item {
-  /* display: block; */
-  border-radius: .5rem;
-  box-shadow: 0rem 0.15rem 0.6rem 0rem rgba(210, 217, 223, 1);
   /* width: 17.8rem; */
-  margin: .5rem .5rem 0rem .5rem;
 }
 
 .detail-price {
   width: 100%;
-  background-color: red;
+  background: linear-gradient(to right, 	#FFAA00	 , #FF0000);
   line-height: 2rem;
   height: 2rem;
   color: white;
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
 }
-
+.detail-type{
+  margin-top: .3rem;
+}
 .detail-title {
   background-color: white;
 }
-
 .detail-price>span {
   font-size: .5rem;
   color: white;
   margin-left: .7rem;
 }
-
-.detail-margin {
-  margin: .5rem 0;
+.detail-power{
   background-color: white;
+  font-size: .5rem;
+  color: #F00000;
 }
-
-.detail-margin>div {
-  background-color: #f1f1f1;
-  border-radius: .2rem;
-  margin: 0 .2rem;
-  padding: .1rem;
-  border: .05rem white solid;
-}
-
 .detail-note {
   background-color: white;
-  margin-top: 1rem;
+  margin-top: .3rem;
 }
 
-.detail-choose {
-  border: .05rem red solid !important;
-  color: red;
-  box-sizing: content-box !important;
-  background-color: white !important;
-}
 
 .footer-bar {
   position: sticky;
-  height: 2.5rem;
+  height: 3rem;
   bottom: 0;
+  background-color: white;
+}
+.buy-amount{
+  margin-right: .5rem;
+  font-size: .7rem;
+  margin-top: .3rem;
+}
+.cell-phone {
+  background: linear-gradient(to right, #FFE700	 , #FFAA00		);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
-.footer-bar>div:first-child {
-  background-color: orange;
+.detail-buy {
+  background: linear-gradient(to right, 	#FF7000	 , #FF0000);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
-
-.footer-bar>div:last-child {
-  background-color: red;
-  margin-top: 0;
+.booter-bar-botton{
+  margin-top: .5rem;
+  width: 30%;
+  line-height: 2rem;
+  font-size: .7rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  height: 2rem;
+}
+.weui-count .weui-count__btn{
+  background-color: #FFCE00 !important;
+  border: none !important;
+}
+.weui-count .weui-count__btn:before{
+  background-color: white !important;
 }

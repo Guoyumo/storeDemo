@@ -45,5 +45,31 @@ require(["zepto", "underscore", "wx",
       $("#detail-buy").on('click', function() {
         location.href = "address.html"
       })
-    });
+      //计数器
+      var MAX = 99,
+        MIN = 1;
+      $(".weui-count__decrease").click(function(e) {
+        var $input = $(e.currentTarget).parent().find('.weui-count__number');
+        var number = parseInt($input.val() || "0") - 1
+        if (number < MIN) number = MIN;
+        $input.val(number)
+      })
+      $(".weui-count__increase").click(function(e) {
+        var $input = $(e.currentTarget).parent().find('.weui-count__number');
+        var number = parseInt($input.val() || "0") + 1
+        if (number > MAX) number = MAX;
+        $input.val(number)
+      })
+      //swiper
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+        },
+        speed: 200,
+      });
+    })
   })
