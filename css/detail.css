@@ -46,7 +46,7 @@ html, body {
 
 .detail-price {
   width: 100%;
-  background: linear-gradient(to right, 	#FFAA00	 , #FF0000);
+  background: linear-gradient(to right, 	#FFAA00	 , #f15b42);
   line-height: 2rem;
   height: 2rem;
   color: white;
@@ -91,7 +91,7 @@ html, body {
 }
 
 .detail-buy {
-  background: linear-gradient(to right, 	#FF7000	 , #FF0000);
+  background: linear-gradient(to right, 	#f18b42	 ,#f15b42);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }

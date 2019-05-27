@@ -1,6 +1,21 @@
+<div class="weui-search-bar">
+  <input type="search" class="search-input" id='search' placeholder='关键字' />
+  <div class="search-button"><img src="css/icon/search.svg" height="20" width="20"></div>
+</div>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <% _.each(storeList,function(item){ %>
+    <img class="swiper-slide" src="<%= item.image %>" alt="">
+    <% }) %>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
 <% _.each(storeList,function(item){ %>
 <div class="store-item">
-  <img src="<%= item.image %>" alt="">
-  <div><%= item.title %></div>
+  <div style="background-image:url(<%= item.image %>)" class="store-img"></div>
+  <div class="store-detail">
+    <div class="store-name"><%= item.title %><span class="goShop">进店</span></div>
+    <div class="store-address"><span>商铺地址：</span><%= item.address %></div>
+  </div>
 </div>
 <% }) %>
