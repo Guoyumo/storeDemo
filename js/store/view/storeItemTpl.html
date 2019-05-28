@@ -11,7 +11,7 @@
   <div class="swiper-pagination"></div>
 </div>
 <% _.each(storeList,function(item){ %>
-<div class="store-item">
+<div class="store-item" data-value="<%= item.code %>">
   <div style="background-image:url(<%= item.image %>)" class="store-img"></div>
   <div class="store-detail">
     <div class="store-name"><%= item.title %><span class="goShop">进店</span></div>

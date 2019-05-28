@@ -1,1 +1,8 @@
-<div>12321321</div>
+
+<% _.each(shopList,function(item){ %>
+    <div style="border: 1px solid red; margin-bottom: 1rem;" class="j_view_detail" data-value="<%= item.code %>">
+        <div style="width: 5rem;"><img src="<%= item.image %>" alt="" style="width: 100%;"></div>
+        <div><%= item.title %></div>
+        <div><%= item.price %></div>
+    </div>
+<% }) %>
