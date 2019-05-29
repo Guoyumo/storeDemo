@@ -1,8 +1,8 @@
 
 <% _.each(shopList,function(item){ %>
-    <div style="border: 1px solid red; margin-bottom: 1rem;" class="j_view_detail" data-value="<%= item.code %>">
-        <div style="width: 5rem;"><img src="<%= item.image %>" alt="" style="width: 100%;"></div>
-        <div><%= item.title %></div>
-        <div><%= item.price %></div>
+    <div class="j_view_detail shop-item" data-value="<%= item.code %>">
+        <div><img src="<%= item.image %>" alt=""  class="shop-img" style="width: 100%;"></div>
+        <div class="shop-title"><%= item.title %></div>
+        <div class="shop-price">¥<%= item.price %></div>
     </div>
 <% }) %>
