@@ -12,7 +12,9 @@
 </div>
 <% _.each(storeList,function(item){ %>
 <div class="store-item" data-value="<%= item.code %>">
-  <div style="background-image:url(<%= item.image %>)" class="store-img"></div>
+  <div >
+    <img src="<%= item.image %>" alt="" class="store-img">
+  </div>
   <div class="store-detail">
     <div class="store-name"><%= item.title %><span class="goShop">进店</span></div>
     <div class="store-address"><span>商铺地址：</span><%= item.address %></div>
