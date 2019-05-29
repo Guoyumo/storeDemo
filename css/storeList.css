@@ -81,13 +81,13 @@ html, body{
   text-align: center;
 }
 .store-address{
-  font-size: .8rem;
-  margin-top: 1rem;
+  font-size: .5rem;
+  margin-top: 2rem;
   text-indent: .3rem;
+  padding-left: .25rem;
+  color:#999;
 }
 .store-detail{
-  height: 8rem;
-  width: 58%;
 }
 .goShop{
   color: #FF1000;
