@@ -1,25 +1,28 @@
 define([''], function () {
     return {
-        adias:[
-            {
-                title:"阿迪达斯男鞋",
-                image:"http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg",
-                price:227,
-                code:"adias1"
-            },
-            {
-                title:"阿迪达斯男鞋",
-                image:"http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg",
-                price:227,
-                code:"adias2"
-            },
-            {
-                title:"阿迪达斯男鞋",
-                image:"http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg",
-                price:227,
-                code:"adias3"
-            }
-        ],
+        adias:{
+            storeName:"承天商厦阿迪达斯",
+            shopList:[
+                {
+                    title:"阿迪达斯男鞋",
+                    image:"http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg",
+                    price:227,
+                    code:"adias1"
+                },
+                {
+                    title:"阿迪达斯男鞋",
+                    image:"http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg",
+                    price:227,
+                    code:"adias2"
+                },
+                {
+                    title:"阿迪达斯男鞋",
+                    image:"http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg",
+                    price:227,
+                    code:"adias3"
+                }
+            ]
+        },
         vans:[],
         iphone:[],
         nike:[],

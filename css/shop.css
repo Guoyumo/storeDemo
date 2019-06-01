@@ -2,7 +2,14 @@ html, body{
   background-color: #f1f1f1;
   font-size: 62.5%;
 }
-
+.shop-name{
+  height: 2rem;
+  color:#fff;
+  font-size: 1rem;
+  background-color:#AAE1EE;
+  text-align: center;
+  line-height: 2rem;
+}
 .shop-item{
   display: inline-block;
   width: 8.25rem;

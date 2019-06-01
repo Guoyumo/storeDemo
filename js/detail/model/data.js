@@ -8,6 +8,7 @@ define([''], function () {
             image2: 'http://pic15.nipic.com/20110628/1369025_192645024000_2.jpg',
             image3: 'http://www.cnr.cn/xjfw/btfw/2011btfw/jkwh/jkwt/20160516/W020160516492035673595.jpg',
             qty: '13',
+            phone:17501651755,
             price: 227,
             type: [{
                 typeName: "颜色",

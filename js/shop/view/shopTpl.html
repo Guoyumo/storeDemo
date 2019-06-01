@@ -1,5 +1,8 @@
 
-<% _.each(shopList,function(item){ %>
+<div class="shop-name">
+    <%= shopList.storeName %>
+</div>
+<% _.each(shopList.shopList,function(item){ %>
     <div class="j_view_detail shop-item" data-value="<%= item.code %>">
         <div><img src="<%= item.image %>" alt=""  class="shop-img" style="width: 100%;"></div>
         <div class="shop-title"><%= item.title %></div>

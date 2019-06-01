@@ -3,7 +3,7 @@ html, body {
 }
 
 .swiper-container {
-  height: 60%;
+  height: 10rem;
 }
 
 .swiper-slide {
@@ -46,7 +46,7 @@ html, body {
 
 .detail-price {
   width: 100%;
-  background: linear-gradient(to right, 	#FFAA00	 , #f15b42);
+  background: linear-gradient(to right, #AAE1EE,	rgb(33, 170, 201));
   line-height: 2rem;
   height: 2rem;
   color: white;
@@ -56,6 +56,7 @@ html, body {
 }
 .detail-title {
   background-color: white;
+  padding: .25rem;
 }
 .detail-price>span {
   font-size: .5rem;
@@ -70,6 +71,7 @@ html, body {
 .detail-note {
   background-color: white;
   margin-top: .3rem;
+  padding: .5rem;
 }
 
 
@@ -85,11 +87,16 @@ html, body {
   margin-top: .3rem;
 }
 .cell-phone {
-  background: linear-gradient(to right, #FFE700	 , #FFAA00		);
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  background: linear-gradient(to right, #AAE1EE	 , rgb(33, 170, 201)		);
+  /* border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem; */
+  border-radius: 2rem;
+  color: #fff;
 }
-
+.cell-phone a{
+  color:#fff;
+}
+ 
 .detail-buy {
   background: linear-gradient(to right, 	#f18b42	 ,#f15b42);
   border-top-right-radius: 2rem;
@@ -104,9 +111,10 @@ html, body {
   color: white;
   font-weight: 600;
   height: 2rem;
+  margin-left: 5rem;
 }
 .weui-count .weui-count__btn{
-  background-color: #FFCE00 !important;
+  background-color: #AAE1EE !important;
   border: none !important;
 }
 .weui-count .weui-count__btn:before{
